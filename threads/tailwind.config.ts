@@ -7,6 +7,11 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+  variants: {
+    extend: {
+      display: ["max-sm"], // Define the custom variant here
+    },
+  },
   theme: {
     container: {
       center: true,
@@ -171,7 +176,13 @@ module.exports = {
         },
       ],
     },
+    variants: {
+      extend: {
+        display: ["max-sm"], // Define the custom variant here
+      },
+    },
     extend: {
+      display: ["max-sm"],
       colors: {
         "primary-500": "#877EFF",
         "secondary-500": "#FFB620",
